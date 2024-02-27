@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00573032B61826F00BD5E64 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00573022B61826F00BD5E64 /* BasicCell.swift */; };
 		B016F2E72B467C570062AFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016F2E62B467C570062AFF2 /* AppDelegate.swift */; };
 		B016F2E92B467C570062AFF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016F2E82B467C570062AFF2 /* SceneDelegate.swift */; };
 		B016F2EB2B467C570062AFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016F2EA2B467C570062AFF2 /* ViewController.swift */; };
 		B016F2EE2B467C570062AFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B016F2EC2B467C570062AFF2 /* Main.storyboard */; };
 		B016F2F02B467C580062AFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B016F2EF2B467C580062AFF2 /* Assets.xcassets */; };
 		B016F2F32B467C580062AFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B016F2F12B467C580062AFF2 /* LaunchScreen.storyboard */; };
+		B066F1F62B59749D00858650 /* ChooseDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066F1F52B59749D00858650 /* ChooseDayViewController.swift */; };
+		B06962882B62F6BD00F23418 /* Unfold.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962702B62F6BC00F23418 /* Unfold.caf */; };
+		B06962892B62F6BD00F23418 /* Tease.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962712B62F6BC00F23418 /* Tease.caf */; };
+		B069628A2B62F6BD00F23418 /* Daybreak.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962722B62F6BC00F23418 /* Daybreak.caf */; };
+		B069628B2B62F6BD00F23418 /* Journey.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962732B62F6BC00F23418 /* Journey.caf */; };
+		B069628C2B62F6BD00F23418 /* Mercury.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962742B62F6BC00F23418 /* Mercury.caf */; };
+		B069628D2B62F6BD00F23418 /* Sprinkles.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962752B62F6BD00F23418 /* Sprinkles.caf */; };
+		B069628E2B62F6BD00F23418 /* Radial.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962762B62F6BD00F23418 /* Radial.caf */; };
+		B069628F2B62F6BD00F23418 /* Dollop.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962772B62F6BD00F23418 /* Dollop.caf */; };
+		B06962902B62F6BD00F23418 /* Canopy.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962782B62F6BD00F23418 /* Canopy.caf */; };
+		B06962912B62F6BD00F23418 /* Departure.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962792B62F6BD00F23418 /* Departure.caf */; };
+		B06962922B62F6BD00F23418 /* Kettle.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627A2B62F6BD00F23418 /* Kettle.caf */; };
+		B06962932B62F6BD00F23418 /* Scavenger.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627B2B62F6BD00F23418 /* Scavenger.caf */; };
+		B06962942B62F6BD00F23418 /* Storytime.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627C2B62F6BD00F23418 /* Storytime.caf */; };
+		B06962952B62F6BD00F23418 /* Tilt.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627D2B62F6BD00F23418 /* Tilt.caf */; };
+		B06962962B62F6BD00F23418 /* Milky Way.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627E2B62F6BD00F23418 /* Milky Way.caf */; };
+		B06962972B62F6BD00F23418 /* Seedling.caf in Resources */ = {isa = PBXBuildFile; fileRef = B069627F2B62F6BD00F23418 /* Seedling.caf */; };
+		B06962982B62F6BD00F23418 /* Chirp.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962802B62F6BD00F23418 /* Chirp.caf */; };
+		B06962992B62F6BD00F23418 /* Arpeggio.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962812B62F6BD00F23418 /* Arpeggio.caf */; };
+		B069629A2B62F6BD00F23418 /* Shelter.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962822B62F6BD00F23418 /* Shelter.caf */; };
+		B069629B2B62F6BD00F23418 /* Steps.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962832B62F6BD00F23418 /* Steps.caf */; };
+		B069629C2B62F6BD00F23418 /* Valley.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962842B62F6BD00F23418 /* Valley.caf */; };
+		B069629D2B62F6BD00F23418 /* Chalet.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962852B62F6BD00F23418 /* Chalet.caf */; };
+		B069629E2B62F6BD00F23418 /* Breaking.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962862B62F6BD00F23418 /* Breaking.caf */; };
+		B069629F2B62F6BD00F23418 /* Quad.caf in Resources */ = {isa = PBXBuildFile; fileRef = B06962872B62F6BD00F23418 /* Quad.caf */; };
+		B0871CA22B4EC873003232B9 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CA12B4EC873003232B9 /* AddAlarmViewController.swift */; };
+		B0871CA72B5397DD003232B9 /* RepeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CA62B5397DD003232B9 /* RepeatCell.swift */; };
+		B0871CA92B539993003232B9 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CA82B539993003232B9 /* LabelCell.swift */; };
+		B0871CAB2B53A19A003232B9 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CAA2B53A19A003232B9 /* SoundCell.swift */; };
+		B0871CAD2B53A29F003232B9 /* SnoozeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CAC2B53A29F003232B9 /* SnoozeCell.swift */; };
+		B0871CB02B53B2D3003232B9 /* AlarmStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0871CAF2B53B2D3003232B9 /* AlarmStruct.swift */; };
+		B0B8EFCC2B47E65A00EA5C7F /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8EFCB2B47E65A00EA5C7F /* CityTableViewCell.swift */; };
+		B0CBCE0E2B4947B800110EFC /* ChooseCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCE0D2B4947B800110EFC /* ChooseCityViewController.swift */; };
+		B0CBCE102B4A890D00110EFC /* WorldClockStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCE0F2B4A890D00110EFC /* WorldClockStruct.swift */; };
+		B0CBCE132B4A9F1400110EFC /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = B0CBCE122B4A9F1400110EFC /* Algorithms */; };
+		B0CBCE152B4CFABB00110EFC /* WorldClockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCE142B4CFABB00110EFC /* WorldClockTableViewController.swift */; };
+		B0CBCE172B4E80D000110EFC /* AlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCE162B4E80D000110EFC /* AlarmTableViewController.swift */; };
+		B0CBCE192B4E840500110EFC /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCE182B4E840500110EFC /* AlarmTableViewCell.swift */; };
+		B0EF5ED22B5BC30A0046C2B1 /* DeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF5ED12B5BC30A0046C2B1 /* DeleteCell.swift */; };
+		B0EF5ED42B5F81A70046C2B1 /* ChooseSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF5ED32B5F81A70046C2B1 /* ChooseSoundViewController.swift */; };
+		B0EF5EDA2B5F86960046C2B1 /* HapticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF5ED92B5F86960046C2B1 /* HapticsCell.swift */; };
+		B0EF5EDC2B5F86A70046C2B1 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF5EDB2B5F86A70046C2B1 /* StoreCell.swift */; };
+		B0EF5EDE2B5F86EC0046C2B1 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF5EDD2B5F86EB0046C2B1 /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00573022B61826F00BD5E64 /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BasicCell.swift; path = lib/BasicCell.swift; sourceTree = "<group>"; };
 		B016F2E32B467C570062AFF2 /* HotDamnClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotDamnClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B016F2E62B467C570062AFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B016F2E82B467C570062AFF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +69,48 @@
 		B016F2EF2B467C580062AFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B016F2F22B467C580062AFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B016F2F42B467C580062AFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B066F1F52B59749D00858650 /* ChooseDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDayViewController.swift; sourceTree = "<group>"; };
+		B06962702B62F6BC00F23418 /* Unfold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Unfold.caf; path = "ringtones-caf/Unfold.caf"; sourceTree = SOURCE_ROOT; };
+		B06962712B62F6BC00F23418 /* Tease.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tease.caf; path = "ringtones-caf/Tease.caf"; sourceTree = SOURCE_ROOT; };
+		B06962722B62F6BC00F23418 /* Daybreak.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Daybreak.caf; path = "ringtones-caf/Daybreak.caf"; sourceTree = SOURCE_ROOT; };
+		B06962732B62F6BC00F23418 /* Journey.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Journey.caf; path = "ringtones-caf/Journey.caf"; sourceTree = SOURCE_ROOT; };
+		B06962742B62F6BC00F23418 /* Mercury.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mercury.caf; path = "ringtones-caf/Mercury.caf"; sourceTree = SOURCE_ROOT; };
+		B06962752B62F6BD00F23418 /* Sprinkles.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sprinkles.caf; path = "ringtones-caf/Sprinkles.caf"; sourceTree = SOURCE_ROOT; };
+		B06962762B62F6BD00F23418 /* Radial.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Radial.caf; path = "ringtones-caf/Radial.caf"; sourceTree = SOURCE_ROOT; };
+		B06962772B62F6BD00F23418 /* Dollop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dollop.caf; path = "ringtones-caf/Dollop.caf"; sourceTree = SOURCE_ROOT; };
+		B06962782B62F6BD00F23418 /* Canopy.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Canopy.caf; path = "ringtones-caf/Canopy.caf"; sourceTree = SOURCE_ROOT; };
+		B06962792B62F6BD00F23418 /* Departure.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Departure.caf; path = "ringtones-caf/Departure.caf"; sourceTree = SOURCE_ROOT; };
+		B069627A2B62F6BD00F23418 /* Kettle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Kettle.caf; path = "ringtones-caf/Kettle.caf"; sourceTree = SOURCE_ROOT; };
+		B069627B2B62F6BD00F23418 /* Scavenger.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Scavenger.caf; path = "ringtones-caf/Scavenger.caf"; sourceTree = SOURCE_ROOT; };
+		B069627C2B62F6BD00F23418 /* Storytime.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Storytime.caf; path = "ringtones-caf/Storytime.caf"; sourceTree = SOURCE_ROOT; };
+		B069627D2B62F6BD00F23418 /* Tilt.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tilt.caf; path = "ringtones-caf/Tilt.caf"; sourceTree = SOURCE_ROOT; };
+		B069627E2B62F6BD00F23418 /* Milky Way.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Milky Way.caf"; path = "ringtones-caf/Milky Way.caf"; sourceTree = SOURCE_ROOT; };
+		B069627F2B62F6BD00F23418 /* Seedling.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Seedling.caf; path = "ringtones-caf/Seedling.caf"; sourceTree = SOURCE_ROOT; };
+		B06962802B62F6BD00F23418 /* Chirp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chirp.caf; path = "ringtones-caf/Chirp.caf"; sourceTree = SOURCE_ROOT; };
+		B06962812B62F6BD00F23418 /* Arpeggio.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Arpeggio.caf; path = "ringtones-caf/Arpeggio.caf"; sourceTree = SOURCE_ROOT; };
+		B06962822B62F6BD00F23418 /* Shelter.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Shelter.caf; path = "ringtones-caf/Shelter.caf"; sourceTree = SOURCE_ROOT; };
+		B06962832B62F6BD00F23418 /* Steps.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Steps.caf; path = "ringtones-caf/Steps.caf"; sourceTree = SOURCE_ROOT; };
+		B06962842B62F6BD00F23418 /* Valley.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Valley.caf; path = "ringtones-caf/Valley.caf"; sourceTree = SOURCE_ROOT; };
+		B06962852B62F6BD00F23418 /* Chalet.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chalet.caf; path = "ringtones-caf/Chalet.caf"; sourceTree = SOURCE_ROOT; };
+		B06962862B62F6BD00F23418 /* Breaking.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Breaking.caf; path = "ringtones-caf/Breaking.caf"; sourceTree = SOURCE_ROOT; };
+		B06962872B62F6BD00F23418 /* Quad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Quad.caf; path = "ringtones-caf/Quad.caf"; sourceTree = SOURCE_ROOT; };
+		B0871CA12B4EC873003232B9 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		B0871CA62B5397DD003232B9 /* RepeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatCell.swift; sourceTree = "<group>"; };
+		B0871CA82B539993003232B9 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		B0871CAA2B53A19A003232B9 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		B0871CAC2B53A29F003232B9 /* SnoozeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeCell.swift; sourceTree = "<group>"; };
+		B0871CAF2B53B2D3003232B9 /* AlarmStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStruct.swift; sourceTree = "<group>"; };
+		B0B8EFCB2B47E65A00EA5C7F /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		B0CBCE0D2B4947B800110EFC /* ChooseCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCityViewController.swift; sourceTree = "<group>"; };
+		B0CBCE0F2B4A890D00110EFC /* WorldClockStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockStruct.swift; sourceTree = "<group>"; };
+		B0CBCE142B4CFABB00110EFC /* WorldClockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewController.swift; sourceTree = "<group>"; };
+		B0CBCE162B4E80D000110EFC /* AlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewController.swift; sourceTree = "<group>"; };
+		B0CBCE182B4E840500110EFC /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		B0EF5ED12B5BC30A0046C2B1 /* DeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCell.swift; sourceTree = "<group>"; };
+		B0EF5ED32B5F81A70046C2B1 /* ChooseSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSoundViewController.swift; sourceTree = "<group>"; };
+		B0EF5ED92B5F86960046C2B1 /* HapticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsCell.swift; sourceTree = "<group>"; };
+		B0EF5EDB2B5F86A70046C2B1 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		B0EF5EDD2B5F86EB0046C2B1 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CBCE132B4A9F1400110EFC /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +144,98 @@
 		B016F2E52B467C570062AFF2 /* HotDamnClockApp */ = {
 			isa = PBXGroup;
 			children = (
+				B0710ABF2B62F51F0041D3F5 /* Library */,
+				B0871CAE2B53B2BC003232B9 /* Structs */,
+				B0B8EFCB2B47E65A00EA5C7F /* CityTableViewCell.swift */,
 				B016F2E62B467C570062AFF2 /* AppDelegate.swift */,
 				B016F2E82B467C570062AFF2 /* SceneDelegate.swift */,
 				B016F2EA2B467C570062AFF2 /* ViewController.swift */,
 				B016F2EC2B467C570062AFF2 /* Main.storyboard */,
 				B016F2EF2B467C580062AFF2 /* Assets.xcassets */,
 				B016F2F12B467C580062AFF2 /* LaunchScreen.storyboard */,
+				B0CBCE182B4E840500110EFC /* AlarmTableViewCell.swift */,
+				B066F1F52B59749D00858650 /* ChooseDayViewController.swift */,
+				B0CBCE0D2B4947B800110EFC /* ChooseCityViewController.swift */,
+				B0871CA12B4EC873003232B9 /* AddAlarmViewController.swift */,
+				B0EF5ED32B5F81A70046C2B1 /* ChooseSoundViewController.swift */,
+				B0CBCE142B4CFABB00110EFC /* WorldClockTableViewController.swift */,
+				B0CBCE162B4E80D000110EFC /* AlarmTableViewController.swift */,
+				B00573022B61826F00BD5E64 /* BasicCell.swift */,
 				B016F2F42B467C580062AFF2 /* Info.plist */,
+				B0EF5ED62B5F86070046C2B1 /* ChooseSoundTableViewCell */,
+				B0871CA32B53968D003232B9 /* AddAlarmTableViewCell */,
 			);
 			path = HotDamnClockApp;
+			sourceTree = "<group>";
+		};
+		B069623F2B62F65300F23418 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B06962812B62F6BD00F23418 /* Arpeggio.caf */,
+				B06962862B62F6BD00F23418 /* Breaking.caf */,
+				B06962782B62F6BD00F23418 /* Canopy.caf */,
+				B06962852B62F6BD00F23418 /* Chalet.caf */,
+				B06962802B62F6BD00F23418 /* Chirp.caf */,
+				B06962722B62F6BC00F23418 /* Daybreak.caf */,
+				B06962792B62F6BD00F23418 /* Departure.caf */,
+				B06962772B62F6BD00F23418 /* Dollop.caf */,
+				B06962732B62F6BC00F23418 /* Journey.caf */,
+				B069627A2B62F6BD00F23418 /* Kettle.caf */,
+				B06962742B62F6BC00F23418 /* Mercury.caf */,
+				B069627E2B62F6BD00F23418 /* Milky Way.caf */,
+				B06962872B62F6BD00F23418 /* Quad.caf */,
+				B06962762B62F6BD00F23418 /* Radial.caf */,
+				B069627B2B62F6BD00F23418 /* Scavenger.caf */,
+				B069627F2B62F6BD00F23418 /* Seedling.caf */,
+				B06962822B62F6BD00F23418 /* Shelter.caf */,
+				B06962752B62F6BD00F23418 /* Sprinkles.caf */,
+				B06962832B62F6BD00F23418 /* Steps.caf */,
+				B069627C2B62F6BD00F23418 /* Storytime.caf */,
+				B06962712B62F6BC00F23418 /* Tease.caf */,
+				B069627D2B62F6BD00F23418 /* Tilt.caf */,
+				B06962702B62F6BC00F23418 /* Unfold.caf */,
+				B06962842B62F6BD00F23418 /* Valley.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B0710ABF2B62F51F0041D3F5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B069623F2B62F65300F23418 /* Sounds */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B0871CA32B53968D003232B9 /* AddAlarmTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0871CA62B5397DD003232B9 /* RepeatCell.swift */,
+				B0871CA82B539993003232B9 /* LabelCell.swift */,
+				B0871CAA2B53A19A003232B9 /* SoundCell.swift */,
+				B0871CAC2B53A29F003232B9 /* SnoozeCell.swift */,
+				B0EF5ED12B5BC30A0046C2B1 /* DeleteCell.swift */,
+			);
+			path = AddAlarmTableViewCell;
+			sourceTree = "<group>";
+		};
+		B0871CAE2B53B2BC003232B9 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				B0CBCE0F2B4A890D00110EFC /* WorldClockStruct.swift */,
+				B0871CAF2B53B2D3003232B9 /* AlarmStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		B0EF5ED62B5F86070046C2B1 /* ChooseSoundTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF5ED92B5F86960046C2B1 /* HapticsCell.swift */,
+				B0EF5EDB2B5F86A70046C2B1 /* StoreCell.swift */,
+				B0EF5EDD2B5F86EB0046C2B1 /* SongCell.swift */,
+			);
+			path = ChooseSoundTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +254,9 @@
 			dependencies = (
 			);
 			name = HotDamnClockApp;
+			packageProductDependencies = (
+				B0CBCE122B4A9F1400110EFC /* Algorithms */,
+			);
 			productName = HotDamnClockApp;
 			productReference = B016F2E32B467C570062AFF2 /* HotDamnClockApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +285,9 @@
 				Base,
 			);
 			mainGroup = B016F2DA2B467C560062AFF2;
+			packageReferences = (
+				B0CBCE112B4A9F1400110EFC /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = B016F2E42B467C570062AFF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +302,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06962902B62F6BD00F23418 /* Canopy.caf in Resources */,
+				B06962932B62F6BD00F23418 /* Scavenger.caf in Resources */,
 				B016F2F32B467C580062AFF2 /* LaunchScreen.storyboard in Resources */,
+				B069629D2B62F6BD00F23418 /* Chalet.caf in Resources */,
+				B069628D2B62F6BD00F23418 /* Sprinkles.caf in Resources */,
+				B069629B2B62F6BD00F23418 /* Steps.caf in Resources */,
 				B016F2F02B467C580062AFF2 /* Assets.xcassets in Resources */,
+				B06962942B62F6BD00F23418 /* Storytime.caf in Resources */,
+				B06962972B62F6BD00F23418 /* Seedling.caf in Resources */,
+				B06962952B62F6BD00F23418 /* Tilt.caf in Resources */,
+				B069628F2B62F6BD00F23418 /* Dollop.caf in Resources */,
+				B06962962B62F6BD00F23418 /* Milky Way.caf in Resources */,
+				B069628C2B62F6BD00F23418 /* Mercury.caf in Resources */,
+				B069629E2B62F6BD00F23418 /* Breaking.caf in Resources */,
+				B06962982B62F6BD00F23418 /* Chirp.caf in Resources */,
+				B06962882B62F6BD00F23418 /* Unfold.caf in Resources */,
+				B069628B2B62F6BD00F23418 /* Journey.caf in Resources */,
+				B069629C2B62F6BD00F23418 /* Valley.caf in Resources */,
+				B06962992B62F6BD00F23418 /* Arpeggio.caf in Resources */,
 				B016F2EE2B467C570062AFF2 /* Main.storyboard in Resources */,
+				B069629A2B62F6BD00F23418 /* Shelter.caf in Resources */,
+				B06962892B62F6BD00F23418 /* Tease.caf in Resources */,
+				B06962912B62F6BD00F23418 /* Departure.caf in Resources */,
+				B069628A2B62F6BD00F23418 /* Daybreak.caf in Resources */,
+				B069628E2B62F6BD00F23418 /* Radial.caf in Resources */,
+				B069629F2B62F6BD00F23418 /* Quad.caf in Resources */,
+				B06962922B62F6BD00F23418 /* Kettle.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +339,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CBCE0E2B4947B800110EFC /* ChooseCityViewController.swift in Sources */,
+				B0CBCE152B4CFABB00110EFC /* WorldClockTableViewController.swift in Sources */,
+				B0871CA22B4EC873003232B9 /* AddAlarmViewController.swift in Sources */,
+				B0CBCE102B4A890D00110EFC /* WorldClockStruct.swift in Sources */,
 				B016F2EB2B467C570062AFF2 /* ViewController.swift in Sources */,
+				B0871CA72B5397DD003232B9 /* RepeatCell.swift in Sources */,
+				B066F1F62B59749D00858650 /* ChooseDayViewController.swift in Sources */,
+				B0EF5ED22B5BC30A0046C2B1 /* DeleteCell.swift in Sources */,
+				B00573032B61826F00BD5E64 /* BasicCell.swift in Sources */,
+				B0B8EFCC2B47E65A00EA5C7F /* CityTableViewCell.swift in Sources */,
+				B0CBCE172B4E80D000110EFC /* AlarmTableViewController.swift in Sources */,
+				B0EF5EDE2B5F86EC0046C2B1 /* SongCell.swift in Sources */,
 				B016F2E72B467C570062AFF2 /* AppDelegate.swift in Sources */,
+				B0EF5EDC2B5F86A70046C2B1 /* StoreCell.swift in Sources */,
 				B016F2E92B467C570062AFF2 /* SceneDelegate.swift in Sources */,
+				B0871CA92B539993003232B9 /* LabelCell.swift in Sources */,
+				B0EF5EDA2B5F86960046C2B1 /* HapticsCell.swift in Sources */,
+				B0871CAD2B53A29F003232B9 /* SnoozeCell.swift in Sources */,
+				B0CBCE192B4E840500110EFC /* AlarmTableViewCell.swift in Sources */,
+				B0871CAB2B53A19A003232B9 /* SoundCell.swift in Sources */,
+				B0871CB02B53B2D3003232B9 /* AlarmStruct.swift in Sources */,
+				B0EF5ED42B5F81A70046C2B1 /* ChooseSoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0CBCE112B4A9F1400110EFC /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0CBCE122B4A9F1400110EFC /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0CBCE112B4A9F1400110EFC /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B016F2DB2B467C560062AFF2 /* Project object */;
 }

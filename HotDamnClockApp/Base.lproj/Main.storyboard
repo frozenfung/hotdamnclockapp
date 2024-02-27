@@ -1,24 +1,683 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dHg-T0-2Ux">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--World Clock-->
+        <scene sceneID="8GZ-W1-Gj5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="0m6-L1-z5I" customClass="WorldClockTableViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ino-9J-9AS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.94820501629196752" green="0.99501798778529227" blue="1" alpha="0.14926126700680273" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableViewCell" id="k5h-0p-fBA" customClass="CityTableViewCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="375" height="87.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k5h-0p-fBA" id="sjP-vn-uU3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hr-98-XF4">
+                                            <rect key="frame" x="191" y="10" width="122.5" height="67.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="56"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xJ-TN-znh">
+                                            <rect key="frame" x="23" y="37.5" width="57" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzt-zP-iua">
+                                            <rect key="frame" x="314.5" y="37.5" width="40.5" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx6-G0-bFj">
+                                            <rect key="frame" x="23" y="16.5" width="35.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1hr-98-XF4" firstAttribute="top" secondItem="sjP-vn-uU3" secondAttribute="top" constant="10" id="5ES-nf-FIv"/>
+                                        <constraint firstAttribute="bottom" secondItem="vzt-zP-iua" secondAttribute="bottom" constant="16" id="Awe-bN-pFW"/>
+                                        <constraint firstAttribute="bottom" secondItem="1hr-98-XF4" secondAttribute="bottom" constant="10" id="KJb-16-Koq"/>
+                                        <constraint firstAttribute="trailing" secondItem="vzt-zP-iua" secondAttribute="trailing" constant="20" id="Ml2-BE-myc"/>
+                                        <constraint firstItem="4xJ-TN-znh" firstAttribute="leading" secondItem="sjP-vn-uU3" secondAttribute="leadingMargin" constant="7" id="U2x-JW-X58"/>
+                                        <constraint firstItem="Vx6-G0-bFj" firstAttribute="leading" secondItem="sjP-vn-uU3" secondAttribute="leadingMargin" constant="7" id="Y51-Vk-89K"/>
+                                        <constraint firstItem="vzt-zP-iua" firstAttribute="leading" secondItem="1hr-98-XF4" secondAttribute="trailing" constant="1" id="YcH-aV-cr6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4xJ-TN-znh" secondAttribute="bottom" constant="10" id="rRS-MH-1hB"/>
+                                        <constraint firstItem="4xJ-TN-znh" firstAttribute="top" secondItem="Vx6-G0-bFj" secondAttribute="bottom" constant="4" id="vmU-gv-crh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="tintColor" name="AccentColor"/>
+                                <connections>
+                                    <outlet property="HRS" destination="Vx6-G0-bFj" id="3JO-7L-f8X"/>
+                                    <outlet property="PMAM" destination="vzt-zP-iua" id="Wwd-Iq-3Vb"/>
+                                    <outlet property="cityName" destination="4xJ-TN-znh" id="qAd-jY-YdX"/>
+                                    <outlet property="cityTime" destination="1hr-98-XF4" id="Z8D-4m-7ij"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0m6-L1-z5I" id="UcK-7Q-aSy"/>
+                            <outlet property="delegate" destination="0m6-L1-z5I" id="w4w-Yc-9eO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="World Clock" largeTitleDisplayMode="always" id="kkH-iO-gBT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aUt-i5-or4">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="clickAddNewCityClock:" destination="0m6-L1-z5I" id="zff-Qh-Msg"/>
+                                <segue destination="NTh-qS-fbJ" kind="presentation" id="bdp-Tw-GdG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AddNewCityClock" destination="aUt-i5-or4" id="kw9-ii-gcy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKn-O6-8p0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1486" y="-1811"/>
+        </scene>
+        <!--Choose a City-->
+        <scene sceneID="Cg0-BR-McB">
+            <objects>
+                <viewController id="hXJ-70-HUr" customClass="ChooseCityViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmB-be-eaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-aa-TID">
+                                <rect key="frame" x="12" y="56" width="351" height="591"/>
+                                <color key="backgroundColor" name="ChooseCityBackground"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseCityTableViewCell" id="2AL-jx-vre">
+                                        <rect key="frame" x="0.0" y="50" width="351" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2AL-jx-vre" id="AOy-Ol-mzL">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="867-qd-Km3" kind="unwind" identifier="complishAddNewClock" unwindAction="unwindToWorldClockTableView:" id="3QH-UZ-0Qs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hXJ-70-HUr" id="mzr-1o-30N"/>
+                                    <outlet property="delegate" destination="hXJ-70-HUr" id="B7x-y4-vzl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zoh-vu-sWq"/>
+                        <color key="backgroundColor" name="ChooseCityBackground"/>
+                        <constraints>
+                            <constraint firstItem="Zoh-vu-sWq" firstAttribute="trailing" secondItem="jqu-aa-TID" secondAttribute="trailing" constant="12" id="3V0-0Q-WVj"/>
+                            <constraint firstItem="jqu-aa-TID" firstAttribute="top" secondItem="Zoh-vu-sWq" secondAttribute="top" id="EnQ-op-66w"/>
+                            <constraint firstItem="jqu-aa-TID" firstAttribute="bottom" secondItem="bmB-be-eaJ" secondAttribute="bottom" id="KHz-O6-Edm"/>
+                            <constraint firstItem="jqu-aa-TID" firstAttribute="leading" secondItem="Zoh-vu-sWq" secondAttribute="leading" constant="12" id="Y1V-v4-Wss"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose a City" largeTitleDisplayMode="never" style="browser" id="Bln-Up-a5G"/>
+                    <connections>
+                        <outlet property="cityTableView" destination="jqu-aa-TID" id="6ze-ZB-mLv"/>
+                        <outlet property="nav" destination="Bln-Up-a5G" id="qT8-kJ-ihf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38u-hz-ccM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="867-qd-Km3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3575.1999999999998" y="-1811.2443778110946"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tpw-JM-5zB">
+            <objects>
+                <tabBarController id="dHg-T0-2Ux" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="KUg-O4-wLs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hFZ-if-qDE" kind="relationship" relationship="viewControllers" id="BjE-hW-T8d"/>
+                        <segue destination="yzU-bd-sCU" kind="relationship" relationship="viewControllers" id="Qlx-Os-6Tq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPJ-aF-U54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-1018"/>
+        </scene>
+        <!--Alarms-->
+        <scene sceneID="xjn-vD-pNR">
+            <objects>
+                <tableViewController id="mml-fp-bDj" customClass="AlarmTableViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="ane-hV-GYo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthAlarmTableViewCell" rowHeight="90" id="u4S-Sw-DOA">
+                                <rect key="frame" x="0.0" y="38" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u4S-Sw-DOA" id="Huh-Gu-FmQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-TC-wxN">
+                                            <rect key="frame" x="19" y="7" width="179" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="44"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJF-fw-obg">
+                                            <rect key="frame" x="266" y="30" width="93" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="gray" title="CHANGE">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="baseForegroundColor" name="AccentColor"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="removeScheduleNotifications:" destination="mml-fp-bDj" eventType="touchUpInside" id="eDz-nP-LAh"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tomorrow Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bE-Ew-M8u">
+                                            <rect key="frame" x="20" y="67" width="122" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-4S-uBx">
+                                            <rect key="frame" x="199" y="20" width="51" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <action selector="showAllPendingRequest:" destination="mml-fp-bDj" eventType="touchUpInside" id="TlK-fy-ruK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlarmTableViewCell" rowHeight="92" id="gWQ-Iy-Kny" customClass="AlarmTableViewCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="128" width="375" height="92"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gWQ-Iy-Kny" id="5iC-Yl-SCn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7gh-Y0-eVo">
+                                            <rect key="frame" x="20" y="11" width="229" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="56"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHC-7d-QBe" customClass="AlarmSwitcher" customModule="HotDamnClockApp" customModuleProvider="target">
+                                            <rect key="frame" x="310" y="31" width="51" height="30"/>
+                                            <connections>
+                                                <action selector="clickSwitcher:" destination="mml-fp-bDj" eventType="valueChanged" id="fvv-k3-PCS"/>
+                                            </connections>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bve-30-0oh">
+                                            <rect key="frame" x="20" y="70" width="200" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kHC-7d-QBe" firstAttribute="trailing" secondItem="5iC-Yl-SCn" secondAttribute="trailingMargin" id="Y5V-jB-VWB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kHC-7d-QBe" secondAttribute="bottom" constant="20" id="YhG-al-Uf8"/>
+                                        <constraint firstItem="kHC-7d-QBe" firstAttribute="top" secondItem="5iC-Yl-SCn" secondAttribute="topMargin" constant="20" id="uqb-75-tJc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="alarmTitle" destination="bve-30-0oh" id="OKb-FG-X7L"/>
+                                    <outlet property="switcher" destination="kHC-7d-QBe" id="8hu-b4-fEc"/>
+                                    <outlet property="time" destination="7gh-Y0-eVo" id="gIK-oJ-b9C"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mml-fp-bDj" id="i3O-Q8-oiA"/>
+                            <outlet property="delegate" destination="mml-fp-bDj" id="f5Y-rr-AOY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Alarms" id="yIF-fi-BUq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6yo-Nj-aTV">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <segue destination="m0C-no-fWx" kind="presentation" identifier="updateAlarm" id="V5T-5R-aXn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AddAlarmBut" destination="6yo-Nj-aTV" id="iwg-7T-PnM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rh-0b-wlu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5999999999999" y="-1018.7406296851575"/>
+        </scene>
+        <!--Add Alarm-->
+        <scene sceneID="HRz-UJ-SGU">
+            <objects>
+                <viewController storyboardIdentifier="AddAlarmViewController" id="RnY-1i-yJ9" customClass="AddAlarmViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5P-4O-Yk1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lx-Mz-8ml">
+                                <rect key="frame" x="10" y="76" width="355" height="216"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RnY-1i-yJ9" id="UhS-JB-E43"/>
+                                    <outlet property="delegate" destination="RnY-1i-yJ9" id="Uft-Jo-Fnf"/>
+                                </connections>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oqK-FT-XBT">
+                                <rect key="frame" x="10" y="229" width="355" height="355"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepeatCell" id="gpo-lV-iBG" customClass="RepeatCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="55.5" width="323" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gpo-lV-iBG" id="y1e-kX-seL">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-no-n71">
+                                                    <rect key="frame" x="69" y="11" width="201" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelText" destination="KS0-no-n71" id="3gc-uL-QT2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="lPn-6D-xWj" customClass="LabelCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="99" width="323" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lPn-6D-xWj" id="WuW-4X-6X9">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-v7-a1C">
+                                                    <rect key="frame" x="52" y="5" width="239" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alarmTitle" destination="SV6-v7-a1C" id="6ag-0e-mFM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoundCell" id="mFJ-pU-B9f" customClass="SoundCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="142.5" width="323" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFJ-pU-B9f" id="623-co-hVa">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exz-NZ-rRb">
+                                                    <rect key="frame" x="59" y="11" width="212" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelText" destination="Exz-NZ-rRb" id="pVM-LH-lPZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SnoozeCell" id="OSj-Pa-Vig" customClass="SnoozeCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="186" width="323" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OSj-Pa-Vig" id="OoK-0k-cUe">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65t-If-6dV">
+                                                    <rect key="frame" x="247" y="6" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeleteCell" id="p9O-RW-yji" customClass="DeleteCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="229.5" width="323" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p9O-RW-yji" id="cSe-cd-FT5">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-VC-aoz">
+                                                    <rect key="frame" x="93" y="11" width="136" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelText" destination="5Eu-VC-aoz" id="JmV-Al-hal"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RnY-1i-yJ9" id="rkT-gg-NCD"/>
+                                    <outlet property="delegate" destination="RnY-1i-yJ9" id="alg-md-J3g"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pep-GZ-8ig"/>
+                        <color key="backgroundColor" name="ChooseCityBackground"/>
+                        <constraints>
+                            <constraint firstItem="oqK-FT-XBT" firstAttribute="top" secondItem="3lx-Mz-8ml" secondAttribute="bottom" constant="-30" id="1DQ-NL-Vxe"/>
+                            <constraint firstItem="3lx-Mz-8ml" firstAttribute="top" secondItem="pep-GZ-8ig" secondAttribute="top" id="2Cu-BA-tL6"/>
+                            <constraint firstItem="3lx-Mz-8ml" firstAttribute="leading" secondItem="pep-GZ-8ig" secondAttribute="leading" constant="10" id="4yb-QO-EE9"/>
+                            <constraint firstItem="3lx-Mz-8ml" firstAttribute="trailing" secondItem="pep-GZ-8ig" secondAttribute="trailing" constant="10" id="81z-ET-Oz5"/>
+                            <constraint firstItem="pep-GZ-8ig" firstAttribute="bottom" secondItem="oqK-FT-XBT" secondAttribute="bottom" constant="-20" id="GA3-UN-V8b"/>
+                            <constraint firstItem="oqK-FT-XBT" firstAttribute="leading" secondItem="pep-GZ-8ig" secondAttribute="leading" constant="15" id="anG-e4-N0f"/>
+                            <constraint firstItem="pep-GZ-8ig" firstAttribute="trailing" secondItem="oqK-FT-XBT" secondAttribute="trailing" constant="15" id="jKi-0R-PpU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Alarm" id="sli-Ln-OvF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Q2W-iC-F8f">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="clickCancelBut:" destination="RnY-1i-yJ9" id="9F4-VN-ivA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ChY-o9-abc">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="clickSaveBut:" destination="RnY-1i-yJ9" id="rQ9-h8-1dZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="configTableView" destination="oqK-FT-XBT" id="C7g-5M-Vef"/>
+                        <outlet property="nav" destination="sli-Ln-OvF" id="VVu-wE-jRe"/>
+                        <outlet property="timePicker" destination="3lx-Mz-8ml" id="DfI-3W-9XZ"/>
+                        <segue destination="EI3-nP-PXg" kind="unwind" identifier="complishAddNewAlarm" unwindAction="unwindToAlarmTableView:" id="n5s-HY-cdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XD4-bd-F1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="EI3-nP-PXg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3575.1999999999998" y="-1018.7406296851575"/>
+        </scene>
+        <!--Choose Day View Controller-->
+        <scene sceneID="s6n-vJ-QeA">
+            <objects>
+                <viewController storyboardIdentifier="ChooseDayViewController" id="3UJ-JX-Ptd" customClass="ChooseDayViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GUE-ZS-8QW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-Ih-sus">
+                                <rect key="frame" x="15" y="40" width="345" height="427"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayViewCell" id="FqF-dH-jOa">
+                                        <rect key="frame" x="0.0" y="50" width="345" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FqF-dH-jOa" id="dHG-gr-tG0">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eSy-C5-enn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J4P-Ih-sus" firstAttribute="top" secondItem="eSy-C5-enn" secondAttribute="top" constant="20" id="QRA-y4-x0M"/>
+                            <constraint firstItem="eSy-C5-enn" firstAttribute="bottom" secondItem="J4P-Ih-sus" secondAttribute="bottom" constant="200" id="wnz-kE-nXY"/>
+                            <constraint firstItem="eSy-C5-enn" firstAttribute="trailing" secondItem="J4P-Ih-sus" secondAttribute="trailing" constant="15" id="wrH-0y-IXt"/>
+                            <constraint firstItem="J4P-Ih-sus" firstAttribute="leading" secondItem="eSy-C5-enn" secondAttribute="leading" constant="15" id="yfy-2Y-hPo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="J4P-Ih-sus" id="t5o-Wz-HPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AM-Ie-lFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4541.6000000000004" y="-1019.640179910045"/>
+        </scene>
+        <!--Choose Sound View Controller-->
+        <scene sceneID="CzH-Cz-nIk">
+            <objects>
+                <viewController storyboardIdentifier="ChooseSoundViewController" id="qH2-eU-jsq" customClass="ChooseSoundViewController" customModule="HotDamnClockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9iE-eg-frR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KbD-1b-7ex">
+                                <rect key="frame" x="15" y="30" width="345" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HapticsCell" id="NDS-J4-xOH" customClass="HapticsCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="345" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDS-J4-xOH" id="Hne-jI-0kb">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haptics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flf-92-xfO">
+                                                    <rect key="frame" x="16" y="11" width="59" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rapid" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-br-Nc1">
+                                                    <rect key="frame" x="225" y="11" width="76" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="flf-92-xfO" id="7oT-q2-iNM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" id="RFm-xF-Vdl" customClass="StoreCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99" width="345" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RFm-xF-Vdl" id="3NJ-9V-RnZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg1-mA-epp">
+                                                    <rect key="frame" x="16" y="11" width="264" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Fg1-mA-epp" id="ihM-EZ-YUJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="umM-zA-fAe" customClass="SongCell" customModule="HotDamnClockApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="142.5" width="345" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="umM-zA-fAe" id="UMG-3n-kr5">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gw-dY-QWA">
+                                                    <rect key="frame" x="16" y="11" width="230" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="6gw-dY-QWA" id="A5g-uz-o1Q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sKQ-42-t5M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KbD-1b-7ex" secondAttribute="bottom" id="2FA-nW-iNG"/>
+                            <constraint firstItem="sKQ-42-t5M" firstAttribute="trailing" secondItem="KbD-1b-7ex" secondAttribute="trailing" constant="15" id="TdT-Wn-qf5"/>
+                            <constraint firstItem="KbD-1b-7ex" firstAttribute="leading" secondItem="sKQ-42-t5M" secondAttribute="leading" constant="15" id="iFx-Vx-aQ0"/>
+                            <constraint firstItem="KbD-1b-7ex" firstAttribute="top" secondItem="sKQ-42-t5M" secondAttribute="top" constant="10" id="yOb-oG-kKm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="KbD-1b-7ex" id="vZ4-s0-mKa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idq-k1-rao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5304.8000000000002" y="-1019.640179910045"/>
+        </scene>
+        <!--World Clock-->
+        <scene sceneID="qkQ-V0-ZbF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yzU-bd-sCU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="World Clock" image="globe" catalog="system" id="ajl-lA-PeQ">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="w2E-Qx-A4U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0m6-L1-z5I" kind="relationship" relationship="rootViewController" id="o3T-aK-TjC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpP-ZD-zU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560" y="-1811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KIu-C2-B9Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NTh-qS-fbJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Q6L-zp-e7E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hXJ-70-HUr" kind="relationship" relationship="rootViewController" id="zxG-8g-HEb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPo-9l-37R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="-1811"/>
+        </scene>
+        <!--Alarms-->
+        <scene sceneID="19E-Kw-iNA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hFZ-if-qDE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alarms" image="alarm.fill" catalog="system" id="EMk-k2-lUj">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="nW0-OS-dAF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mml-fp-bDj" kind="relationship" relationship="rootViewController" id="gaQ-Dl-EXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wL8-kV-ekq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559.5419847328244" y="-1018.3098591549297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fgP-NC-LNo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m0C-no-fWx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mlP-WA-iUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RnY-1i-yJ9" kind="relationship" relationship="rootViewController" id="YAq-4e-1MC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1M-pI-YfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2649.6183206106871" y="-1018.3098591549297"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alarm.fill" catalog="system" width="123" height="128"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ChooseCityBackground">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
